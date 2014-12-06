@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -972,8 +972,7 @@ DIN A5, landscape with doc field</description>
 <sheets>
 <sheet>
 <plain>
-<text x="5.08" y="124.46" size="1.778" layer="91">WRONG PART:  Use RGB LED with COMMON CATHODE</text>
-<text x="7.62" y="109.22" size="1.778" layer="91">WRONG PART:  Use RGB LED with COMMON CATHODE</text>
+<text x="7.62" y="111.76" size="1.778" layer="91">WRONG PART:  Use RGB LED with COMMON CATHODE</text>
 <text x="86.868" y="45.466" size="2.54" layer="91">Arduino D2</text>
 <text x="86.614" y="39.624" size="2.54" layer="91">Arduino D4</text>
 </plain>
@@ -1079,35 +1078,27 @@ DIN A5, landscape with doc field</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="RED"/>
 <wire x1="33.02" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="101.6" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="76.2" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="50.8" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="101.6" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="RED"/>
-<wire x1="33.02" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
-<junction x="25.4" y="76.2"/>
-<pinref part="U$1" gate="G$1" pin="RED"/>
-<wire x1="33.02" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<junction x="25.4" y="50.8"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="BLU"/>
-<wire x1="33.02" y1="99.06" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="99.06" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="BLU"/>
+<wire x1="33.02" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="73.66" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="GRN"/>
-<wire x1="33.02" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="96.52" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="10.16" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="10.16" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GRN"/>
+<wire x1="33.02" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="45.72" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
