@@ -6,7 +6,7 @@ This includes an Arduino sketch and related schematic.  The schematic has a PNG 
 
 Late one night, in a drunken stupor, I thought it might be cool to run a bunch of LEDs with an arduino using a cheap decade counter to save pins.  Decade counters are really cheap.
 
-The schematic is a mess.  It's for a 74xxx series decade counter but I don't think EagleCAD had the part I was using...I was really drunk when I designed this.
+So I built one.  The schematic is a mess.  It's for a 74xxx series decade counter but I don't think EagleCAD had the part I was using...I was really drunk when I designed this.
 
 It's been a while since I've used the circuit.  This is just a funky way to multiplex the PWM outputs of an Arduino.  By coordinating the decade counter clock and PWM cycles, one can roughly control the colors on all three LEDs simultaneously.
 
