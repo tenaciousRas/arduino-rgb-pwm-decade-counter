@@ -963,7 +963,6 @@ DIN A5, landscape with doc field</description>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$4" library="SparkFun" deviceset="5V" device=""/>
-<part name="U$5" library="SparkFun" deviceset="5V" device=""/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="PTH-1/4W" value="330"/>
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device="PTH-1/4W" value="330"/>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device="PTH-1/4W" value="330"/>
@@ -973,8 +972,6 @@ DIN A5, landscape with doc field</description>
 <sheet>
 <plain>
 <text x="7.62" y="111.76" size="1.778" layer="91">WRONG PART:  Use RGB LED with COMMON CATHODE</text>
-<text x="86.868" y="45.466" size="2.54" layer="91">Arduino D2</text>
-<text x="86.614" y="39.624" size="2.54" layer="91">Arduino D4</text>
 </plain>
 <instances>
 <instance part="V1" gate="1" x="124.46" y="88.9"/>
@@ -985,13 +982,12 @@ DIN A5, landscape with doc field</description>
 <instance part="Q2" gate="G$1" x="68.58" y="73.66"/>
 <instance part="Q3" gate="G$1" x="68.58" y="48.26"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="GND1" gate="1" x="63.5" y="30.48"/>
+<instance part="GND1" gate="1" x="63.5" y="35.56"/>
 <instance part="GND2" gate="1" x="144.78" y="35.56"/>
 <instance part="U$4" gate="G$1" x="96.52" y="121.92"/>
-<instance part="U$5" gate="G$1" x="63.5" y="20.32" rot="R270"/>
-<instance part="R1" gate="G$1" x="48.26" y="30.48"/>
-<instance part="R2" gate="G$1" x="48.26" y="20.32"/>
-<instance part="R3" gate="G$1" x="48.26" y="10.16"/>
+<instance part="R1" gate="G$1" x="40.64" y="30.48"/>
+<instance part="R2" gate="G$1" x="40.64" y="20.32"/>
+<instance part="R3" gate="G$1" x="40.64" y="10.16"/>
 <instance part="U$6" gate="G$1" x="86.36" y="33.02" rot="R270"/>
 </instances>
 <busses>
@@ -1053,14 +1049,14 @@ DIN A5, landscape with doc field</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="E"/>
-<wire x1="71.12" y1="43.18" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="43.18" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="71.12" y1="38.1" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="38.1" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="40.64" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="E"/>
 <wire x1="71.12" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="68.58" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
-<junction x="63.5" y="38.1"/>
+<wire x1="63.5" y1="68.58" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
+<junction x="63.5" y="40.64"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <wire x1="71.12" y1="93.98" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
@@ -1079,42 +1075,53 @@ DIN A5, landscape with doc field</description>
 <pinref part="U$3" gate="G$1" pin="RED"/>
 <wire x1="33.02" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="101.6" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="101.6" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="76.2" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="50.8" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RED"/>
+<wire x1="33.02" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
+<junction x="25.4" y="76.2"/>
+<pinref part="U$1" gate="G$1" pin="RED"/>
+<wire x1="33.02" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<junction x="25.4" y="50.8"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="BLU"/>
 <wire x1="33.02" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="73.66" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="73.66" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="BLU"/>
+<wire x1="22.86" y1="48.26" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="99.06" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
+<junction x="22.86" y="73.66"/>
+<pinref part="U$1" gate="G$1" pin="BLU"/>
+<wire x1="33.02" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<junction x="22.86" y="48.26"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="10.16" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GRN"/>
 <wire x1="33.02" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="45.72" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GRN"/>
+<wire x1="33.02" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="71.12" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<junction x="27.94" y="45.72"/>
+<pinref part="U$3" gate="G$1" pin="GRN"/>
+<wire x1="33.02" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="96.52" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<junction x="27.94" y="71.12"/>
 </segment>
 </net>
 <net name="5V" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="30.48" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="5V"/>
-<wire x1="55.88" y1="20.32" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
-<junction x="55.88" y="20.32"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="10.16" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="5V"/>
 <wire x1="124.46" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
@@ -1128,20 +1135,43 @@ DIN A5, landscape with doc field</description>
 <pinref part="U$6" gate="G$1" pin="5V"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="ARDUINO_D1" class="0">
 <segment>
 <pinref part="V1" gate="1" pin="!CLKEN"/>
 <wire x1="109.22" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="96.52" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
+<label x="86.36" y="45.72" size="2.54" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="ARDUINO_D2" class="0">
 <segment>
 <pinref part="V1" gate="1" pin="CLK"/>
 <wire x1="109.22" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="91.44" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
+<label x="86.36" y="40.64" size="2.54" layer="95"/>
+</segment>
+</net>
+<net name="ARDUINO_PWM1" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<label x="50.8" y="30.48" size="2.54" layer="95"/>
+</segment>
+</net>
+<net name="ARDUINO_PWM2" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
+<label x="50.8" y="20.32" size="2.54" layer="95"/>
+</segment>
+</net>
+<net name="ARDUINO_PWM3" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
+<label x="50.8" y="10.16" size="2.54" layer="95"/>
 </segment>
 </net>
 </nets>
